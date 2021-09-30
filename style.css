@@ -3,3 +3,21 @@ body {
     background: black;
     color: white;
 }
+
+#header a {
+    color: white;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#header-title {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 0;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
