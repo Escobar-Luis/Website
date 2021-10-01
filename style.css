@@ -149,7 +149,7 @@ header {
     right: 0;
     z-index: 100;
     
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -225,6 +225,7 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+}
 
 @media (min-width: 600px) {
     .intro {
@@ -255,7 +256,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
 /*  My services section  */
 
 .my-services {
