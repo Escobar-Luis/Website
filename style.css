@@ -1,27 +1,54 @@
-#logo {
-    size: 50px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+/* Custom Properties (Have to contain -- to work) */
+
+:root {
+    /* Font Family from google */
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    /* Font weight */
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    /* Text Color */
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    
+    /* Font size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        /* Readjusting font sizes to work at larger screen sizes */
+        --fs-h1: 4.5;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
 
 body {
-    text-align: center;
-    background: white;
-    color: black;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
 
-#header a {
-    color: black;
-    text-decoration: overline;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-#header-title {
+img {
     display: block;
-    float: left;
-    position: absolute;
-    left: 0;
-    line-height: normal;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 10px;
+    max-width: 100%;
 }
