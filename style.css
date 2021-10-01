@@ -1,11 +1,15 @@
+#logo {
+    size: 50px;
+}
+
 body {
     text-align: center;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 #header a {
-    color: white;
+    color: black;
     text-decoration: overline;
     text-transform: uppercase;
     letter-spacing: 0.1em;
